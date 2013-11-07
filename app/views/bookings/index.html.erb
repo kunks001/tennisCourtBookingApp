@@ -1,7 +1,7 @@
 <h3> Bookings for 
-<!--   <%= select_tag :court,
+  <%= select_tag :court,
       options_for_select(TennisCourt.all.map {|c| [ c.name, tennis_court_bookings_path(c) ]}, tennis_court_bookings_path(@tennis_court))
-  %> -->
+  %>
 </h3>
 
 <div class="calendar_container">

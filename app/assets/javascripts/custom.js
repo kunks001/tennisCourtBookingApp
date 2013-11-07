@@ -1,9 +1,9 @@
 $(document).ready(function(){
   calendar();
 
-  // $('#court').on('change', function() {
-  //   window.location = $(this).val();
-  // })
+  $('#court').on('change', function() {
+    window.location = $(this).val();
+  })
 });
 
 $(document).on('page:load', function() {
