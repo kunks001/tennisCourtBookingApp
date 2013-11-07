@@ -1,4 +1,9 @@
 TennisCourtBookingApp::Application.routes.draw do
+  root 'tennis_courts#index'
+
+  resources :tennis_courts do
+	  resources :bookings
+	end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
